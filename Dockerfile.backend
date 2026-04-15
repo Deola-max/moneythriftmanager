@@ -1,0 +1,13 @@
+FROM node:20-slim
+WORKDIR /app
+# Copy the root package files first
+COPY package*.json ./
+# Install dependencies (including typescript and ts-node)
+RUN npm install
+# Copy the entire project
+COPY . .
+# Move into the backend folder to build
+WORKDIR /app/backend
+RUN npm install
+# Run the app using ts-node directly (best for development/CS projects)
+CMD ["npx", "ts-node", "src/index.ts"]

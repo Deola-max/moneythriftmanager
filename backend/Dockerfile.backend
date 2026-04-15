@@ -1,0 +1,10 @@
+FROM node:20-slim
+WORKDIR /app
+# We copy the main package.json to get the dependencies
+COPY package*.json ./
+RUN npm install --production
+# Then we copy everything, including the backend folder
+COPY . .
+EXPOSE 5000
+# Run the index.js inside the backend folder
+CMD ["node", "backend/index.js"]

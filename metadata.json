@@ -1,0 +1,5 @@
+{
+  "name": "MoneyThriftManager Fixes",
+  "description": "Fixes TypeScript errors in the Input component and CreateSavingsPlanForm, and adds a basic index.html with Tailwind CSS setup.",
+  "requestFramePermissions": []
+}
