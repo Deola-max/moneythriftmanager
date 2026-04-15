@@ -32,9 +32,11 @@ docker-compose up --build
 ├── Dockerfile.frontend # Multi-stage build for React/Nginx
 ├── Dockerfile.backend  # Node.js production environment
 └── docker-compose.yml  # Infrastructure-as-Code (IaC) manager
+
+
 # 🛡 System Monitoring
 chmod +x scripts/monitor.sh
 ./scripts/monitor.sh
 
-**##**👤 Author
-LAMBE FAVOUR
+👤 Author
+LAMBE FAVOUR (ADEOLA)
