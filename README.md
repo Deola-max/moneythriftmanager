@@ -36,5 +36,5 @@ docker-compose up --build
 chmod +x scripts/monitor.sh
 ./scripts/monitor.sh
 
-##👤 Author
+**##**👤 Author
 LAMBE FAVOUR
